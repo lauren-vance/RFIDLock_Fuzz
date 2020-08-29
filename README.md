@@ -3,6 +3,8 @@
 This project was created to practice fuzzing on embedded systems. The program is written in C for the ST Nucleo F429ZI (STM32F429ZIT6 MCU). It controls a motion sensor, RFID reader, servo motor, and LCD screen to function as a "lock" mechanism, which is protected by RFID Keycards. The keycards are registered or deleted using the Python client program, which communicates with the hardware via TCP protocol. The "main.c" file was written by me in mbed online IDE; the additional libraries were not written by me but were also found and imported from here. The Python 3 file was also written by me. 
 The applications of this project are mostly hypothetical, but were programmed to handle some real scenarios as much as possible. The main purpose of creating this program was to learn fuzzing techniques and challenges on embedded systems by planting bugs in the original program and attempting to find them using boofuzz. Due to the nature of embedded systems, faults and crashes are harder to spot immediately and can lead to latent effects which are difficult for fuzzing to handle. In summary, this project was mostly used as a learning tool not only for fuzzing applications but as a first introduction to concepts like Ethernet Interfacing and TCP protocol. 
 
+![Hardware](https://i.imgur.com/v7jBTdql.jpg?1)
+
 ## Getting Started
 
 List of Equipment Used:
